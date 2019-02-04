@@ -1,62 +1,124 @@
 
 body{
-    margin: 0;
+ margin: 0;
+ background-color: #efefef; /*فقط من اجل التجربة*/
+font-family: 'Cairo','Open Sans', sans-serif;
+height: 1500px;
+direction:ltr; /*من اليمين إلى اليسار*/
 }
+
 #header{
     width:100%;
-    min-height: 100px;
+    min-height: 50px;
     background: #fff;
     box-shadow: 0  0 35px #e9e8e9;  
+    position: fixed; /*موقعة ثابت*/
+    top: 0; /*ملتصق بالاعلى*/
 }
 .container{
 /*max-width: 1170px;*/
 width:100%;
 margin: 0 auto;
 /*background-color: #02b8dd; /*فقط من اجل التجربة*/
-    background-color: #efefef; /*فقط من اجل التجربة*/
-
-height: 70px; /*فقط من اجل التجربة*/
+ background-color: #efefef; /*فقط من اجل التجربة*/
+height: 80px; /*فقط من اجل التجربة*/
+padding: 0 15px ; /*هنا نعطية الهوامش من اليسار واليمين بقيمة 15*/
+box-sizing: border-box; /*هنا نحتسب هذه الهوامش من حال العرض الحالي*/
+overflow: auto; /*جعل العنصر يلتف حول إي عناصر تخرج عن حدودة*/
 }
 .clear{
     clear: both;
 }
-
-nav img{
-    float: left;
-    margin-left: 70px;
+nav {
+    float: left; 
 }
-nav h1{
-    display: inline-block;
-    margin: 20px 50px 20px 50px;
+nav ul {
+  list-style-type: none; /*ازالة النقاط*/
+  margin: 0; /*ازالة الهوامش الخارجية*/
+  padding: 0; /*ازالة الهوامش الداخلية*/
+  /*overflow: hidden; /*
+    اخفاء العناصر التي قد تخرج عن القائمة
+*/
+    
+}
+nav li {
+   display: inline-block;
+  padding: 5px 5px;
+font-size: 14px;
+color: #333;
+  text-decoration: none; 
+}
+nav li a{
+  display: inline-block;
+  padding: 17px 15px;
+font-size: 14px;
+color: #333;
+  text-decoration: none;
+}
+
+nav .dropdown-content {
+ display: none;  /*اضفت هذا فقط*/
+position: absolute;
+background-color: #f9f9f9;
+background-color: burlywood;
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px #d1d1d1;
+  z-index: 1;}
+
+
+
+nav .dropdown-content li{
+float: left;
+}
+nav .dropdown:hover .dropdown-content{
+  display: block;
+}
+.logo{
+    position: relative;
+}
+
+.logo img{
+    float: left;
+    margin-left: 30px;
+}
+.logo h1{
+    display: inline;
+    margin: 10px 50px 20px 50px;
    float: left;
 }
-nav input{
+input{
+    position: absolute;
     float: right;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 15px;
     padding: 10px;
     border-radius: 5px;
+    left: 80%;
 }
+
 #centrer{
     width: 100%;
     margin:0 auto;
+    margin-top: 10px;
     border-width: 2px;
-    border-style: solid;
+  /*  border-style: solid;*/
     height: 400px;
     text-align: center;
+    position: relative;
 
 }
 .images {
+    width: 33%;
     position:relative;
-    margin: auto;
-    margin-left: 30px;
+   /* margin: auto;*/
+    margin-left: 1px;
+    right:1px;
     float: left;
+
 
 }
 
 div .images img{
-/*width:100%;
-height: auto;*/
 
 }
 
@@ -72,7 +134,7 @@ div .desc {
     font-family:sans-serif;
     color: aliceblue;
 }
-ul{
+/*ul{
   display: block;
 }
  ul li
@@ -80,9 +142,9 @@ ul{
 
     width: 400px;
     float:left;
-    /*padding-top:5px;*/
+    /*padding-top:5px;
     text-align: center;
-   /* margin-right: 10px;
+   margin-right: 10px;
     border: 3px solid green;*/
 
     
