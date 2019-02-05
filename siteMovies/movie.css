@@ -20,7 +20,7 @@ direction:ltr; /*من اليمين إلى اليسار*/
 width:100%;
 margin: 0 auto;
 /*background-color: #02b8dd; /*فقط من اجل التجربة*/
- background-color: #efefef; /*فقط من اجل التجربة*/
+background-color: #efefef; /*فقط من اجل التجربة*/
 height: 80px; /*فقط من اجل التجربة*/
 padding: 0 15px ; /*هنا نعطية الهوامش من اليسار واليمين بقيمة 15*/
 box-sizing: border-box; /*هنا نحتسب هذه الهوامش من حال العرض الحالي*/
@@ -29,9 +29,14 @@ overflow: auto; /*جعل العنصر يلتف حول إي عناصر تخرج �
 .clear{
     clear: both;
 }
-nav {
+nav .dropdown-content li{
+display: block;
+float: none;
+}
+nav{
     float: left; 
 }
+
 nav ul {
   list-style-type: none; /*ازالة النقاط*/
   margin: 0; /*ازالة الهوامش الخارجية*/
@@ -42,34 +47,30 @@ nav ul {
     
 }
 nav li {
-   display: inline-block;
-  padding: 5px 5px;
+display: inline-block;
+padding: 5px 5px;
 font-size: 14px;
 color: #333;
-  text-decoration: none; 
+text-decoration: none; 
 }
 nav li a{
-  display: inline-block;
-  padding: 17px 15px;
+display: inline-block;
+padding: 17px 15px;
 font-size: 14px;
 color: #333;
-  text-decoration: none;
+text-decoration: none;
 }
 
 nav .dropdown-content {
- display: none;  /*اضفت هذا فقط*/
+display: none;  /*اضفت هذا فقط*/
 position: absolute;
 background-color: #f9f9f9;
-background-color: burlywood;
-  min-width: 230px;
-  box-shadow: 0px 8px 16px 0px #d1d1d1;
-  z-index: 1;}
+/*background-color: burlywood;*/
+min-width: 230px;
+box-shadow: 0px 8px 16px 0px #d1d1d1;
+z-index: 1;}
 
 
-
-nav .dropdown-content li{
-float: left;
-}
 nav .dropdown:hover .dropdown-content{
   display: block;
 }
