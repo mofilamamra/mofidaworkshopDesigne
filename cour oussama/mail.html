@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+     <title> Main Title</title>
+   </head>
+    <body>
+        <!--Srart Heade-->
+        <header class="main">
+            <h1>HTML5 COURS</h1>
+        </header> 
+        <!--Srart Navigation-->
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+      <!--Srart Main-->           
+    <main>
+       <p>Welcom To Our <span><mark>HTML5</mark> Cource </span> From Elzero Sckool</p>
+    </main>
+    <div class="post">   
+        <!--Srart Article-->
+        <article >
+            
+            <header>
+                <h3>Our Frame Work Milestone Using<mark>PROGRESS TAG</mark></h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+            <section>
+                <p>This is Article #01</p>
+                <div>Design:<progress value="7" max="10"></progress><br>
+                     Codding:<progress value="65" max="100"></progress>
+                </div>
+
+            </section>
+        </article>
+        
+        <article >
+            <header>
+                <h3>Article #2 Using<mark>DETAILS TAG</mark></h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+             <section>
+              <p>This is Article #02</p>
+                 <details open>
+                    <summary>References</summary>
+                      <ul>
+                        <li><a href="#">Ref 01</a> </li>
+                        <li><a href="#">Ref 02</a></li>
+                        <li><a href="#">Ref 03</a></li>
+
+                      </ul>
+                </details>
+              </section>
+       </article>
+        <article>
+            <header>
+                <h3>Article #03 Using<mark>WBR</mark> </h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+            <section>
+                <p>This is Article Content Number #03</p>
+                <div class="long-link" > 
+               https://www.youtube.com/watch?<wbr>v=xNxChPYEYNU<wbr>&list=PLDoPjvo<wbr>NmBAyXCAQMLhDRZsLi_HurqTBZ<wbr>&index=11
+                </div>
+            </section>
+       </article>
+                <article>
+            <header>
+                <h3>Article About Using code Inside&lt;figure&gt;</h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+            <section>
+                <p>this code escripe the Div Syntax</p>
+                <figure>
+                    <figcaption>This is Div Syntax  1=3</figcaption>
+                <code>
+                  &lt;div&gt;This is normal syntax for Div &lt;/div&gt; 
+                </code>
+                </figure>
+            </section>
+       </article>
+                <article>
+            <header>
+                <h3>Article About Using Image Inside&lt;figure&gt;</h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+            <section>
+                <p>this code descripe the Image Inside Figure</p>
+               <!--><></> <></> </--> 
+                <dialog open>This is Dialog from HTML5 </dialog>
+                <figure class="img-figure">
+                    <figcaption>Cat Figure 2=6</figcaption>
+                <img src="images%20(4).jpg" alt="Cat" title="my Cat"/>
+                <img src="images%20(4).jpg" alt="Cat" title="my Cat"/>
+                <img src="images%20(4).jpg" alt="Cat" title="my Cat"/>
+                  <figcaption>Cat Figure 2=6</figcaption>
+                </figure>
+            </section>
+       </article>
+                            <article>
+            <header>
+                <h3>Article About Using Vedio Inside&lt;vedio&gt;</h3>
+                <p>Created by <span>Osama</span>On<span>15/10/2014</span> </p>
+            </header>
+            <section>
+                <p>this code descripe the vedio </p>
+               <!--><></> <></> </--> 
+                <video controls width="320" height="300" autoplay loop muted poster="114.mp3" preload="auto">
+                <source src="vedio%201.mp4" type="video/mp4">
+                <source src="" type="video/ogg">
+                <track src="ossama.vtt" srclang="en" label="English" >
+                
+               Your brouser that not support a vedio
+                </video>
+            </section>
+       </article>
+        </div> 
+      <!--Start side bar-->
+
+        <aside>
+            <section>
+
+                <h3>Catégories</h3>
+                <ul>
+                    <li>Intro</li>
+                    <li>Semantic</li>
+                    <li>Api</li>
+                    <li>New Attribut</li>
+                    <li>Multimedia Elements</li>
+                </ul>
+            </section>
+            <section class="meters">
+                <h3>Performance</h3>
+                <div>
+                   Cpu:<meter min=      "0"
+                              max=      "1" 
+                              value=    ".5"
+                              low=      ".5" 
+                              high=     ".8" 
+                              optimum=  ".5">
+                        </meter>
+                </div>
+            <ul>
+              
+            </ul>
+        </section>
+        <section class="top-Members">
+            <h3>Top Members</h3>
+            <ul>
+                <li> Osama : 90 point</li> 
+                <li>Ahmed :120 point</li>
+                <li><bdi>علي</bdi>: 80 point</li> 
+                <li><bdi>محمد</bdi>: 100 point</li> 
+            </ul>
+        </section>
+        <section class="poll">
+            <h3>Whats Your Best Browser! </h3>
+            <form>
+              <input list="Browsers">
+            <datalist id="Browsers">
+                <option value="firefox">  
+                <option value="Safari"> 
+                <option value="opera"> 
+                <option value="Internet Explorer"> 
+            </datalist>
+          <input type="submit" value="choose" > 
+            </form>
+        </section>
+        <section class="calculate-age">
+            <h3>Calculate Age in Days</h3>
+            <form oninput="result.value = parseInt(age.value) * parseInt(days.value) +' Days'">
+              <input  type="text" name="age" > 
+              <input  type="hidden" name="days" value="360" > 
+              <output name="result"> </output>
+            </form>
+        </section>
+        </aside>
+        <section>
+            <h3>This is Audio</h3>
+              <audio controls autoplay loop muted preload="none" > 
+                 <source src="114.mp3" type="audio/mpeg">
+                 <source src="114.ogg" type="audio/ogg">
+                  your Brouser non suport Audo technologie
+              </audio>
+        </section>
+
+        
+        <div class="clearfix"></div>
+        
+      
+        
+        
+        <!--Start Footer-->
+        <footer>
+            Copyright 2015  &copy;ALL RIGHT Reserved 
+        </footer>
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+</html>
