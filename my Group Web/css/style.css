@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 100px;
+    box-sizing: border-box;
+}
+nav{
+  background-color: #2d3436;
+  color: white;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  font-family: cursive,sans-serif;
+  line-height: 50px;
+  font-size: 14px;
+}
+nav p{
+  display: inline-block;
+  padding-right: 20px;
+}
+nav .title{
+  margin-left: 50px;
+}
+nav .login{
+  float: right;
+}
+header{
+  height: 400px;
+  width: 100%;
+    color: #8e44ad;
+    background-color: aqua;
+    background-image:url("../images/stock-photo-natural-beauty-beautiful-girl-in-a-wheat-field-296442692.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    text-align: center;
+   /* font-size: 50px;*/
+    padding-top: 200px;
+}
+header h2{
+    text-align: center;
+}
+main{
+    padding-top: 50px;
+   /* border: 1px solid grey;*/
+   /* height: 500px;*/
+}
+main section{
+    width: 100%;
+    height: 250px;
+  /*  border:1px solid grey;*/
+}
+main .flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+main section .left1{
+    padding-top: 50px;
+  /*  border:1px solid grey;*/
+    word-wrap: break-word;
+    width: 200px;
+    text-indent: 10px;}
+
+main section .left1 h2{
+    margin-bottom: 20px;
+}
+main section .left1 p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+main section .left1{
+    float: left; 
+    }
+
+main section .right1 img{
+    width: 250px;
+    height: 250px;
+    float: right;
+    border-radius: 180px;
+}
+
+
+main section .left2 img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 180px;
+}
+
+
+main section .right2{
+    padding-top: 50px;
+  /*  border:1px solid grey;*/
+    word-wrap: break-word;
+    width: 200px;
+    text-indent: 10px;}
+
+main section .right2 h2{
+    margin-bottom: 20px;
+}
+main section .right2 p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+main section .right2{
+    float: right; 
+    }
+footer{
+    margin-top: 20px;
+text-align: center;
+  background-color: #000;
+  color: white;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  font-family: cursive,sans-serif;
+  line-height: 50px;
+  font-size: 14px;
+
+}
+
+
